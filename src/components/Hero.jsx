@@ -144,7 +144,7 @@ export default function Hero() {
             className="relative w-[340px] h-[450px] md:w-[380px] md:h-[500px] overflow-hidden rounded-[2.5rem] border-[12px] border-white shadow-2xl z-10 bg-brand-beige"
           >
             <img 
-              src="/doctor.jpg" 
+              src={`${import.meta.env.BASE_URL}doctor.jpg`} 
               alt="Dr. Priyanka Kawale - Founder & Chief Cosmetologist" 
               className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
               loading="eager"

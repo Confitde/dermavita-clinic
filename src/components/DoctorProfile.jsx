@@ -46,7 +46,7 @@ export default function DoctorProfile() {
           
           <div className="relative w-full max-w-[360px] aspect-[4/5] overflow-hidden rounded-[2.5rem] border-[10px] border-brand-beige shadow-xl bg-brand-gold/5">
             <img 
-              src="/doctor.jpg" 
+              src={`${import.meta.env.BASE_URL}doctor.jpg`} 
               alt="Dr. Priyanka Kawale - Clinical Director"
               className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
               loading="lazy"

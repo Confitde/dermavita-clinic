@@ -7,21 +7,21 @@ const galleryItems = [
     id: 1,
     title: 'Luxury Welcome Lobby',
     desc: 'Our calming reception, crafted in warm marble, gold detailing, and organic textures, offers a soothing sanctuary.',
-    img: '/gallery1.jpg',
+    img: import.meta.env.BASE_URL + 'gallery1.jpg',
     span: 'md:col-span-2'
   },
   {
     id: 2,
     title: 'Precision Laser Suite',
     desc: 'Equipped with medical-grade, cooling diode laser technologies for highly effective hair reduction & toning.',
-    img: '/gallery2.jpg',
+    img: import.meta.env.BASE_URL + 'gallery2.jpg',
     span: 'md:col-span-1'
   },
   {
     id: 3,
     title: 'Bespoke Skincare Flatlay',
     desc: 'We curate clean, medical-grade, nutrient-dense skincare formulas to maintain clinical results at home.',
-    img: '/gallery3.jpg',
+    img: import.meta.env.BASE_URL + 'gallery3.jpg',
     span: 'md:col-span-3'
   }
 ];

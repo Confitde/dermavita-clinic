@@ -7,8 +7,8 @@ const cases = [
     id: 1,
     title: 'Acne Scar Remodeling',
     category: 'Skin',
-    before: '/before.jpg',
-    after: '/after.jpg',
+    before: import.meta.env.BASE_URL + 'before.jpg',
+    after: import.meta.env.BASE_URL + 'after.jpg',
     sessions: '4 Sessions',
     timeframe: '3 Months',
     desc: 'Deep subcision combined with microneedling fractional RF restored structural tissue and smoothed uneven textural pitting.'
@@ -17,8 +17,8 @@ const cases = [
     id: 2,
     title: 'Melasma Pigmentation',
     category: 'Laser',
-    before: '/before.jpg',
-    after: '/after.jpg',
+    before: import.meta.env.BASE_URL + 'before.jpg',
+    after: import.meta.env.BASE_URL + 'after.jpg',
     sessions: '5 Sessions',
     timeframe: '4 Months',
     desc: 'Q-Switched laser toning and medical depigmenting peels broke down dermal melanin reserves for a bright, even skin tone.'
@@ -27,8 +27,8 @@ const cases = [
     id: 3,
     title: 'Hair Regrowth & Density',
     category: 'Hair',
-    before: '/before.jpg',
-    after: '/after.jpg',
+    before: import.meta.env.BASE_URL + 'before.jpg',
+    after: import.meta.env.BASE_URL + 'after.jpg',
     sessions: '6 Sessions',
     timeframe: '6 Months',
     desc: 'Platelet-Rich Plasma (PRP) scalp therapy injected vital growth factors, multiplying active follicles and thickness.'
