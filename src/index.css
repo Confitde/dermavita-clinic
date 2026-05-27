@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Outfit", sans-serif;
+  
+  --color-brand-gold-light: #E7D7C1;
+  --color-brand-gold: #C5A880;
+  --color-brand-gold-dark: #A68860;
+  --color-brand-cream: #FAF9F6;
+  --color-brand-beige: #F5F2EB;
+  --color-brand-blush: #FFF0EE;
+  --color-brand-dark: #2D2622;
+  --color-brand-dark-light: #4A3E39;
+  --color-brand-green: #2A5C43;
+  --color-brand-green-light: #3D7A5D;
+
+  --animate-float: float 8s ease-in-out infinite;
+  --animate-float-delayed: float 8s ease-in-out infinite 4s;
+  --animate-pulse-subtle: pulse-subtle 3s ease-in-out infinite;
+  --animate-shimmer: shimmer 2.5s infinite linear;
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(2deg); }
+  }
+  @keyframes pulse-subtle {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.9; }
+  }
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+}
+
+/* Base Adjustments */
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-dark);
+}
+
+/* Custom Scrollbar for Luxury Aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-gold);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-gold-dark);
+}
+
+/* Custom Glassmorphism Utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-panel-dark {
+  background: rgba(45, 38, 34, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gold Text Gradient */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #E7D7C1 0%, #C5A880 50%, #A68860 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Shimmer Highlight Effect */
+.shimmer-bg {
+  background: linear-gradient(90deg, rgba(197, 168, 128, 0.1) 25%, rgba(197, 168, 128, 0.25) 50%, rgba(197, 168, 128, 0.1) 75%);
+  background-size: 200% 100%;
+}
